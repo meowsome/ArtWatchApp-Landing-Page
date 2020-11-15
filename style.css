@@ -1,0 +1,596 @@
+/* Main */
+
+h1 {
+    font-size: 75px;
+}
+
+h2 {
+    font-size: 62.5px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+h4 {
+    font-size: 37.5px;
+}
+
+h5 {
+    font-size: 30px;
+}
+
+h6 {
+    font-size: 25px;
+}
+
+h7 {
+    font-size: 20px;
+}
+
+a,
+p {
+    font-size: 18px;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+a,
+p {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 300;
+}
+
+.footer {
+    padding: 50px 0 25px 0;
+}
+
+body {
+    background: #36393E;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.wrapper-horizontal {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.wrapper-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start !important;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end !important;
+    align-items: flex-end;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.w1 {
+    width: 10%;
+}
+
+.w2 {
+    width: 20%;
+}
+
+.w3 {
+    width: 30%;
+}
+
+.w4 {
+    width: 40%;
+}
+
+.w5 {
+    width: 50%;
+}
+
+.w6 {
+    width: 60%;
+}
+
+.w7 {
+    width: 70%;
+}
+
+.w8 {
+    width: 80%;
+}
+
+.w9 {
+    width: 90%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.nav {
+    height: 15%;
+    background: #F8F7FF;
+    text-decoration: none !important;
+    transition: all 0.25s;
+}
+
+.nav .nav-link:last-child {
+    padding-right: 50px;
+}
+
+.nav .logo {
+    height: 3em;
+    padding-left: 50px;
+}
+
+.footer .logo {
+    height: 4em;
+    padding: 15px;
+    margin-top: -55px;
+}
+
+.social {
+    background: #56E39F;
+    height: 1.5em;
+    padding: 7.5px;
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.25s;
+}
+
+.social:hover {
+    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.4);
+    background: rgba(86, 227, 159, 0.75);
+}
+
+.nav-link {
+    padding: 15px;
+    color: black;
+    transition: 0.25s all;
+}
+
+.nav-link:hover {
+    color: rgba(0, 0, 0, 0.35) !important;
+}
+
+.main {
+    height: 90%;
+}
+
+.main .logo {
+    height: 6em;
+    margin-top: -70px;
+    padding: 15px;
+}
+
+.carousel-text {
+    padding: 5px 10px;
+    margin: 0 7.5px;
+}
+
+.carousel-text-zeroth {
+    color: rgba(255, 255, 255, 0.0);
+    margin-top: -55px;
+}
+
+.carousel-text-first,
+.carousel-text-fifth {
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.carousel-text-second,
+.carousel-text-fourth {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.carousel-text-wrapper {
+    background: #BD4089;
+}
+
+.carousel-text-third {
+    color: white;
+}
+
+.carousel-transition-zeroth-anim {
+    animation: carousel-transition-zeroth 1s;
+}
+
+.carousel-transition-first-anim {
+    animation: carousel-transition-first 1s;
+}
+
+.carousel-transition-second-anim {
+    animation: carousel-transition-second 1s;
+}
+
+.carousel-transition-third-anim {
+    animation: carousel-transition-third 1s;
+}
+
+.carousel-transition-fourth-anim {
+    animation: carousel-transition-fourth 1s;
+}
+
+.carousel-transition-fifth-anim {
+    animation: carousel-transition-fifth 1s;
+}
+
+@keyframes carousel-transition-zeroth {
+    from {
+        transform: translate(0, 0);
+        color: rgba(255, 255, 255, 0.0);
+    }
+
+    to {
+        color: rgba(255, 255, 255, 0.1);
+        transform: translate(0, 100%);
+    }
+}
+
+@keyframes carousel-transition-first {
+    from {
+        color: rgba(255, 255, 255, 0.1);
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(0, 100%);
+        color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+@keyframes carousel-transition-second {
+    from {
+        color: rgba(255, 255, 255, 0.4);
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(0, 100%);
+        color: white;
+    }
+}
+
+@keyframes carousel-transition-third {
+    from {
+        transform: translate(0, 0);
+        color: white;
+    }
+
+    to {
+        color: rgba(255, 255, 255, 0.4);
+        transform: translate(0, 100%);
+    }
+}
+
+@keyframes carousel-transition-fourth {
+    from {
+        transform: translate(0, 0);
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+    to {
+        transform: translate(0, 100%);
+        color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+@keyframes carousel-transition-fifth {
+    from {
+        transform: translate(0, 0);
+        color: rgba(255, 255, 255, 0.1);
+    }
+
+    to {
+        color: rgba(255, 255, 255, 0.0);
+        transform: translate(0, 100%);
+    }
+}
+
+.padding {
+    padding: 25px;
+}
+
+.padding-small {
+    padding: 10px;
+}
+
+.margin {
+    margin: 25px !important;
+}
+
+.margin-small {
+    margin: 10px;
+}
+
+button,
+.button {
+    background: #56E39F;
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    margin: 10px;
+    padding: 10px 40px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    transition: all 0.25s;
+    border: none;
+    text-decoration: none !important;
+}
+
+button:hover,
+.button:hover {
+    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.4);
+    background: rgba(86, 227, 159, 0.75);
+}
+
+
+/* wide n short screens */
+@media only screen and (max-height: 500px) {
+    h1 {
+        font-size: 30px !important;
+    }
+
+    h2 {
+        font-size: 25px !important;
+    }
+
+    .nav .logo {
+        height: 2em !important;
+    }
+
+    .main .logo {
+        height: 3em !important;
+        margin-top: -50px !important;
+    }
+
+    h3 {
+        font-size: 20px !important;
+    }
+
+    h4 {
+        font-size: 17.5px !important;
+    }
+
+    h5 {
+        font-size: 15px !important;
+    }
+
+    h6 {
+        font-size: 12.5px !important;
+    }
+
+    h7 {
+        font-size: 10px !important;
+    }
+
+    a,
+    p {
+        font-size: 10px !important;
+    }
+
+    .carousel {
+        margin-top: 20px !important;
+    }
+
+    .carousel-wrapper h4 {
+        font-size: 15px !important;
+    }
+
+    .footer .logo {
+        height: 2.5em !important;
+        padding: 15px !important;
+        margin-top: -25px !important;
+    }
+
+    .social {
+        margin: 5px !important;
+    }
+
+    .button,
+    button {
+        padding: 10px 20px !important;
+    }
+}
+
+/* tablet boyes */
+@media only screen and (max-width: 950px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    .main .logo {
+        height: 4em;
+        margin-top: -50px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 35px;
+    }
+
+    h5 {
+        font-size: 30px;
+    }
+
+    h6 {
+        font-size: 25px;
+    }
+
+    h7 {
+        font-size: 20px;
+    }
+
+    a,
+    p {
+        font-size: 20px;
+    }
+
+    .carousel {
+        margin-top: 20px;
+    }
+
+    .carousel-wrapper h4 {
+        font-size: 25px;
+    }
+
+    .button,
+    button {
+        padding: 10px 20px;
+    }
+}
+
+
+/* narrow n long screens */
+@media only screen and (max-width: 450px) {
+    .nav .nav-link:last-child {
+        padding-right: 25px;
+    }
+
+    .nav .logo {
+        padding-left: 25px;
+    }
+
+    #hero {
+        margin-top: 25px;
+    }
+
+    .w1,
+    .w2,
+    .w3,
+    .w4,
+    .w5,
+    .w6,
+    .w7,
+    .w8,
+    .w9,
+    .w10 {
+        width: 100%;
+    }
+
+    .nav .w5 {
+        width: 50%;
+    }
+
+    .padding {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .main .logo {
+        height: 4em;
+        margin-top: -50px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    h5 {
+        font-size: 25px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    h7 {
+        font-size: 18px;
+    }
+
+    a,
+    p {
+        font-size: 18px;
+    }
+
+    .carousel {
+        margin-top: 20px;
+    }
+
+    .carousel-wrapper h4 {
+        font-size: 20px;
+    }
+
+    .carousel-wrapper {
+        margin-top: 25px;
+    }
+
+    .footer .w5 {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .button,
+    button {
+        padding: 10px 20px;
+    }
+}
